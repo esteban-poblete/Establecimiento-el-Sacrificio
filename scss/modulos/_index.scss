@@ -1,0 +1,160 @@
+.header { height: 40vh;
+    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
+    background-size: cover;
+    background-position: 0,5vh;
+    display: grid;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-template-columns: 0.3fr repeat(1, 0.6fr) 0.5fr;
+    grid-template-areas: 
+    "logo h1 ."
+    "logo . ."
+    ". . botones";
+    align-items: center;
+    #div-logo {height: auto; 
+        grid-area: logo;
+        text-align: center;
+        .logoheader {
+            margin-top: 15px;
+            height: 15vh;
+            width: 8vw;
+            
+        }
+    }
+    #div-header-btn { grid-area: botones;
+        text-align: right;
+        grid-template-columns: auto auto;
+        margin-right: 20px;
+        text-align: center;
+        #nav-index { font-size: 10px;
+            .botones-header{margin-top: 10px;
+                text-decoration: none;
+                padding: 5px;
+                border: 0.1cm solid $color-body;
+                background-color: $color-botones;
+                border-radius: 25px;
+                color: black;
+                font-family: 'Arial Narrow Bold', sans-serif;
+                font-size: 11px;
+                &:hover {
+                    font-size: 1rem;
+                    background-color: rgba(0, 0, 0, 0.218);
+                    color: beige;
+                }
+            }
+        }
+    }
+    #div-h1-header { grid-area: h1;
+        text-align: center;
+        border-radius: 10px;
+        .h1-header { 
+        margin-top: 10px;
+        color: $color-textos;
+        font-size: 25px;
+        font-family: $fuente-titulos;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        }
+    }
+}
+#index-main { height: auto;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 0.5fr);
+    grid-template-rows: 0.1fr repeat(4, 0.1fr);
+    grid-template-areas: 
+    "h2-index h2-index h2-index"
+    "div-img-index div-img-index div-img-index"
+    "sec-index sec-index sec-index"
+    "img-nosotros img-nosotros img-nosotros"
+    "div-video-index div-video-index div-video-index"
+    ;
+    .h2-index { font-size: 50px;
+        margin-top: 20px 0 0 10px;
+        grid-area: h2-index;
+        text-align: center;
+        color: #4F000B;
+        font-family: $fuente-titulos;
+    }
+    #div-img-nosotros { grid-area: div-img-index;
+        text-align: center;
+
+        .img-nosotros { height: 30vh;
+            border-radius: 10px;
+            box-shadow: $box-s;
+            margin: 15px;
+
+        }
+        .video-nosotros { height: 50vh;
+            width: 20vw;
+            border-radius: 10px;
+            box-shadow: $box-s;
+            background-color: rgba(0, 0, 0, 0.218);
+            grid-area: nosotros-video;
+
+        }
+    }
+    .sec-index { grid-area: sec-index;
+        font-size: 15px;
+        font-family: cursive;
+        article {
+            .p-index { font-family: $fuente-parrafos;
+            }
+        }
+    }
+    #div-video-index { grid-area: div-video-index;
+        text-align: center;
+        .video-index2 { height: 80%;
+            width: 80%;
+            border-radius: 10px;
+            margin: 20px 0px 20px;
+            box-shadow: $box-s;
+        }
+    }
+    #img-nosotros2 { grid-area: img-nosotros;
+        text-align:  center;
+        .img-nosotros2 {
+            height: 30vh;
+            border-radius: 10px;
+            box-shadow: $box-s;
+            margin: 10px;
+        }
+    } 
+}
+footer { height: 25vh;
+    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
+    background-size: cover;
+    background-position: 0,2vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px;
+    justify-content: space-evenly;
+    #p-footer { grid-column: 2 / 3;
+        grid-row: 0.5fr;
+        margin-top: 30px;
+        height: 5vh;
+        border-radius: 8px;
+        .p-index-footer { font-size: 15px;
+            font-family: $fuente-parrafos;
+            color: $color-textos;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+    #div-logofooter { grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        .logo-footer { height: 80px;
+            width: 80px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    }
+    #redes-index { margin: 10px;
+        grid-column: auto;
+        grid-row: auto;
+        .img-redes { margin: 10px;
+            height: 35px;
+            width: 35px;
+        }
+    }
+}

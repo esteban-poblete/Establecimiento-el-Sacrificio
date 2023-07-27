@@ -1,0 +1,89 @@
+.container-fluid { height: 30vh;
+    background-size: cover;
+    background-position: 0%;
+    .display-1 { font-size: 2rem;
+        color: $color-textos;
+        font-family: $fuente-titulos;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+.main-proyectos { display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    .div-video-proyectos { grid-row: 3 / 4;
+        grid-column: 1 / 4;
+        text-align: center;
+        .video-proyectos { height: 70%;
+            width: 70%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.212); 
+            margin: 15px;
+        }
+    }
+    .sec-proyectos { grid-row: 2 / 3;
+        grid-column: 1 / 4 ;
+        margin-top: 15px;
+        width: auto;
+    }
+    .div-img-proyectos { grid-row: 1 / 2;
+        grid-column: 1 / 4;
+        .img-proyectos { width: 20%;
+            height: 20%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.212);  
+            margin: 15px;
+        }
+    }
+    .div-img-proyectos2 {grid-row: 4 / 5;
+        grid-column: 1 / 4;
+    }
+    .img-proyectos {width: 20%;
+        height: 20%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.212);  
+        margin: 15px;
+
+    }
+}
+
+footer { height: 25vh;
+    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
+    background-size: cover;
+    background-position: 0,2vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px;
+    justify-content: space-evenly;
+    #p-footer { grid-column: 2 / 3;
+        grid-row: 0.5fr;
+        margin-top: 30px;
+        height: 5vh;
+        border-radius: 8px;
+        .p-index-footer { font-size: 15px;
+            font-family: $fuente-parrafos;
+            color: $color-textos;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+    #div-logofooter { grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        .logo-footer { height: 80px;
+            width: 80px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    }
+    #redes-index { margin: 5px;
+        grid-column: auto;
+        grid-row: auto;
+        .img-redes { margin-top: 20px;
+            height: 35px;
+            width: 35px;
+        }
+    }
+}
+

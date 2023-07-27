@@ -1,0 +1,127 @@
+.header { height: 30vh;
+    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
+    background-size: cover;
+    background-position: 0,5vh;
+    display: grid;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-template-columns: 0.3fr repeat(1, 0.6fr) 0.5fr;
+    grid-template-areas: 
+    ". . botones"
+    ". h1 ."
+    "logo . .";
+    align-items: center;
+    #div-logo { grid-area: logo;
+        text-align: center;
+        .logoheader {
+            margin-top: 15px;
+            height: 15vh;
+            width: 8vw;
+            border-radius: 30px;
+        }
+    }
+    #div-header-btn { grid-area: botones;
+        text-align: right;
+        grid-template-columns: auto auto;
+        margin-right: 20px;
+        text-align: center;
+        #nav-index { font-size: 10px;
+            .botones-header {text-decoration: none;
+                padding: 5px;
+                border: 0.1cm solid $color-botones;
+                background-color: $color-body;
+                border-radius: 25px;
+                color: black;
+                font-family: 'Arial Narrow Bold', sans-serif;
+                font-size: 11px;
+                &:hover {
+                    font-size: 1rem;
+                    background-color: rgba(0, 0, 0, 0.218);
+                    color: beige;
+                }
+            }
+        }
+    }
+    #div-h1-header { grid-area: h1;
+        text-align: center;
+        border-radius: 10px;
+        .h1-header { color: $color-textos;
+        font-size: 25px;
+        font-family: $fuente-titulos;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        }
+    }
+}
+.main-contacto { display: flex;
+    height: 75vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    .aside-form {display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-decoration: none;
+    }
+    #formulario { align-items: center;
+        height: 45vh;
+        margin-top: 20px;
+        .caja-nombre { font-size: 15px;
+            font-family: $fuente-parrafos;
+            margin: 5px;
+        }
+        .caja-mail { font-size: 15px;
+            font-family: $fuente-parrafos;
+            margin: 5px;
+        }
+        .caja-mensaje { margin: 5px;
+            font-size: 15px;
+            font-family: $fuente-parrafos;
+        }
+        .div-btn-envia { margin-top: 25px;
+            height: 5vh;
+            .btn-envia1 { background-color: rgba(0, 0, 0, 0.048);
+                color:black;
+            }
+        }
+    }
+}
+footer { height: auto;
+    height:auto;
+    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
+    background-size: cover;
+    background-position: 0,2vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px;
+    justify-content: space-around;
+    #p-footer { grid-column: 2 / 3;
+        grid-row: 0.5fr;
+        margin-top: 30px;
+        height: 5vh;
+        border-radius: 8px;
+        .p-index-footer { font-size: 15px;
+            font-family: $fuente-parrafos;
+            color: $color-textos;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+    #div-logo { grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        .logo-footer { height: 15vh;
+            width: 8vw;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    }
+    #redes-index { margin: 5px;
+        grid-column: auto;
+        grid-row: auto;
+        .img-redes { margin-top: 20px;
+            height: 8vh;
+            width: 8vw;
+        }
+    }
+}
