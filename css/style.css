@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #afd0bf;
+  background-color: rgb(164, 249, 205);
 }
 
 .header {
@@ -17,52 +17,54 @@ body {
   background-position: 0, 5vh;
   display: grid;
   grid-template-rows: repeat(3, 0.5fr);
-  grid-template-columns: 0.3fr repeat(1, 0.6fr) 0.5fr;
-  grid-template-areas: "logo h1 ." "logo . ." ". . botones";
+  grid-template-columns: 0.3fr repeat(1, 0.6fr) 1fr;
+  grid-template-areas: ". h1 botone" "logo . botone" ". . botone";
   align-items: center;
 }
 .header #div-logo {
   height: auto;
   grid-area: logo;
   text-align: center;
+  margin-bottom: 30px;
 }
-.header #div-logo .logoheader {
-  margin-top: 15px;
-  height: 15vh;
-  width: 8vw;
+.header #div-logo .logo-header {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
-.header #div-header-btn {
-  grid-area: botones;
-  text-align: right;
-  grid-template-columns: auto auto;
+
+#div-header-btn {
+  grid-area: botone;
   margin-right: 20px;
   text-align: center;
 }
-.header #div-header-btn #nav-index {
+#div-header-btn #nav-index {
+  margin-top: 30px;
   font-size: 10px;
 }
-.header #div-header-btn #nav-index .botones-header {
-  margin-top: 10px;
+#div-header-btn #nav-index .botones-header {
   text-decoration: none;
   padding: 5px;
-  border: 0.1cm solid #afd0bf;
+  border: 0.1cm solid rgb(164, 249, 205);
   background-color: #e2efde;
   border-radius: 25px;
   color: black;
   font-family: "Arial Narrow Bold", sans-serif;
   font-size: 11px;
 }
-.header #div-header-btn #nav-index .botones-header:hover {
+#div-header-btn #nav-index .botones-header:hover {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.218);
   color: beige;
 }
-.header #div-h1-header {
+
+#div-h1-header {
   grid-area: h1;
   text-align: center;
   border-radius: 10px;
 }
-.header #div-h1-header .h1-header {
+#div-h1-header .h1-header {
   margin-top: 10px;
   color: #FF9B54;
   font-size: 25px;
@@ -85,6 +87,7 @@ body {
   text-align: center;
   color: #4F000B;
   font-family: "Rajdhani", sans-serif;
+  transition: width 4s linear;
 }
 #index-main #div-img-nosotros {
   grid-area: div-img-index;
@@ -95,6 +98,10 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.218);
   margin: 15px;
+}
+#index-main #div-img-nosotros .img-nosotros:hover {
+  height: 15rem;
+  width: 15rem;
 }
 #index-main #div-img-nosotros .video-nosotros {
   height: 50vh;
@@ -167,7 +174,7 @@ footer #div-logofooter {
 footer #div-logofooter .logo-footer {
   height: 80px;
   width: 80px;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 footer #redes-index {
@@ -197,10 +204,10 @@ footer #redes-index .img-redes {
   text-align: center;
 }
 .header #div-logo .logoheader {
-  margin-top: 15px;
-  height: 15vh;
-  width: 8vw;
-  border-radius: 30px;
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 .header #div-header-btn {
   grid-area: botones;
@@ -216,7 +223,7 @@ footer #redes-index .img-redes {
   text-decoration: none;
   padding: 5px;
   border: 0.1cm solid #e2efde;
-  background-color: #afd0bf;
+  background-color: rgb(164, 249, 205);
   border-radius: 25px;
   color: black;
   font-family: "Arial Narrow Bold", sans-serif;
@@ -314,8 +321,8 @@ footer #div-logo {
   grid-row: 1/3;
 }
 footer #div-logo .logo-footer {
-  height: 15vh;
-  width: 8vw;
+  height: 80px;
+  width: 80px;
   border-radius: 30px;
   margin-top: 10px;
 }
@@ -346,10 +353,10 @@ footer #redes-index .img-redes {
   text-align: center;
 }
 .header #div-logo .logoheader {
-  margin-top: 15px;
-  height: 15vh;
-  width: 8vw;
-  border-radius: 30px;
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 .header #div-header-btn {
   grid-area: botones;
@@ -389,6 +396,12 @@ footer #redes-index .img-redes {
   border-radius: 10px;
 }
 
+main .h3 {
+  text-align: center;
+  font-size: 38px;
+  font-family: "Montserrat", sans-serif;
+  color: #4F000B;
+}
 main .div-img-herramientas {
   display: flex;
   flex-direction: row;
@@ -414,7 +427,7 @@ main #div-img-herramientas2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 main #div-img-herramientas2 .img-herramientas2 {
   width: 20%;
@@ -604,10 +617,10 @@ footer #redes-index .img-redes {
   text-align: center;
 }
 .header #div-logo .logoheader {
-  margin-top: 15px;
-  height: 15vh;
-  width: 8vw;
-  border-radius: 30px;
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 .header #div-header-btn {
   grid-area: botones;
@@ -771,51 +784,49 @@ footer #redes-index .img-redes {
 /* @media queris */
 @media (max-width: 1024px) {
   .header {
-    grid-template-rows: repeat(3, 0.5fr);
-    grid-template-columns: 0.3fr repeat(1, 0.6fr);
-    grid-template-areas: "logo h1 " "logo h1" "logo botones";
-  }
-  #div-header-btn {
-    grid-column: 1/3;
-    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   #div-logo {
-    grid-row: 1/1;
-    text-align: center;
-  }
-  #div-h1-header {
-    grid-row: 2/3;
-    grid-column: 1/3;
-  }
-  #div-img-nosotros {
-    width: 100%;
-    grid-area: div-img-index;
-    text-align: center;
-  }
-  .img-nosotros {
-    margin: 5px;
+    margin-top: 30px;
+    order: 1;
   }
 }
+#div-header-btn {
+  order: 3;
+  text-align: center;
+}
+
+#div-h1-header {
+  order: 2;
+}
+
+#div-img-nosotros {
+  width: 100%;
+  grid-area: div-img-index;
+  text-align: center;
+}
+
+.img-nosotros {
+  margin: 5px;
+}
+
 @media (min-width: 375px) and (max-width: 653px) {
   /* index */
   .header {
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-    grid-template-areas: "h1" "logo" "botones";
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  #div-header-btn {
-    text-align: center;
-  }
-  .logoheader {
-    margin-top: 10px;
-    height: 75px;
-    width: 75px;
-  }
-  .h1-header {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .botones-header {
-    font-size: 12px;
+  #div-logo {
+    height: 10px;
+    width: 10px;
+    margin-top: 20px;
   }
   #div-img-nosotros {
     display: flex;
@@ -847,10 +858,17 @@ footer #redes-index .img-redes {
   #div-logofooter {
     height: 50%;
     width: 50%;
+    order: 2;
   }
   .logo-footer {
-    width: 110px;
-    height: 11px;
+    width: 50px;
+    height: 50px;
+  }
+  #p-footer {
+    order: 3;
+  }
+  #redes-index {
+    order: 1;
   }
   /* proyectos */
   /* contacto */
@@ -870,6 +888,27 @@ footer #redes-index .img-redes {
   .div-img-herramientas {
     margin-right: 50px;
   }
+}
+@media (max-width: 600px) {
+  .header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #div-logo {
+    text-align: center;
+    order: 1;
+  }
+}
+#div-header-btn {
+  order: 3;
+  text-align: center;
+}
+
+#div-h1-header {
+  order: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

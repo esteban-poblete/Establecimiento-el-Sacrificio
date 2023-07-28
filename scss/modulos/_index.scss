@@ -4,29 +4,30 @@
     background-position: 0,5vh;
     display: grid;
     grid-template-rows: repeat(3, 0.5fr);
-    grid-template-columns: 0.3fr repeat(1, 0.6fr) 0.5fr;
+    grid-template-columns: 0.3fr repeat(1, 0.6fr) 1fr;
     grid-template-areas: 
-    "logo h1 ."
-    "logo . ."
-    ". . botones";
+    ". h1 botone"
+    "logo . botone"
+    ". . botone";
     align-items: center;
     #div-logo {height: auto; 
         grid-area: logo;
         text-align: center;
-        .logoheader {
-            margin-top: 15px;
-            height: 15vh;
-            width: 8vw;
-            
+        margin-bottom: 30px;
+        .logo-header {
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
         }
     }
-    #div-header-btn { grid-area: botones;
-        text-align: right;
-        grid-template-columns: auto auto;
+    #div-header-btn { grid-area: botone;
         margin-right: 20px;
         text-align: center;
-        #nav-index { font-size: 10px;
-            .botones-header{margin-top: 10px;
+        #nav-index {margin-top: 30px; 
+            font-size: 10px;
+            .botones-header{
                 text-decoration: none;
                 padding: 5px;
                 border: 0.1cm solid $color-body;
@@ -55,7 +56,6 @@
         border-radius: 10px;
         }
     }
-}
 #index-main { height: auto;
     display: grid;
     grid-template-columns: 1fr repeat(2, 0.5fr);
@@ -73,6 +73,7 @@
         text-align: center;
         color: #4F000B;
         font-family: $fuente-titulos;
+        transition: width 4s linear;
     }
     #div-img-nosotros { grid-area: div-img-index;
         text-align: center;
@@ -81,6 +82,10 @@
             border-radius: 10px;
             box-shadow: $box-s;
             margin: 15px;
+            &:hover {
+                height: 15rem;
+                width:15rem;
+            }
 
         }
         .video-nosotros { height: 50vh;
@@ -145,7 +150,7 @@ footer { height: 25vh;
         text-align: center;
         .logo-footer { height: 80px;
             width: 80px;
-            border-radius: 30px;
+            border-radius: 10px;
             margin-top: 10px;
         }
     }

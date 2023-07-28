@@ -13,10 +13,10 @@
     #div-logo { grid-area: logo;
         text-align: center;
         .logoheader {
-            margin-top: 15px;
-            height: 15vh;
-            width: 8vw;
-            border-radius: 30px;
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+            margin-bottom: 10px;
         }
     }
     #div-header-btn { grid-area: botones;
@@ -110,8 +110,8 @@ footer { height: auto;
     }
     #div-logo { grid-column: 1 / 2;
         grid-row: 1 / 3;
-        .logo-footer { height: 15vh;
-            width: 8vw;
+        .logo-footer { height: 80px;
+            width: 80px;
             border-radius: 30px;
             margin-top: 10px;
         }

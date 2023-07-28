@@ -13,10 +13,10 @@
     #div-logo { grid-area: logo;
         text-align: center;
         .logoheader {
-            margin-top: 15px;
-            height: 15vh;
-            width: 8vw;
-            border-radius: 30px;
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+            margin-bottom: 10px;
         }
     }
     #div-header-btn { grid-area: botones;
@@ -53,6 +53,12 @@
     }
 }
 main {
+    .h3 {
+        text-align: center;
+        font-size: 38px;
+        font-family: $fuente-parrafos;
+        color: #4F000B;
+    }
     .div-img-herramientas { display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -76,7 +82,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center; 
+        justify-content: space-evenly; 
         .img-herramientas2 { width: 20%;
             height: 20%;
             border-radius: 10px;
