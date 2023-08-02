@@ -118,16 +118,14 @@
         }
     }
 }
-footer { height: 25vh;
+#footer { height: 25vh;
     background-image: url(../assets/imagenes/encabezado\ header.jpeg);
     background-size: cover;
     background-position: 0,2vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 100px;
-    justify-content: space-evenly;
-    #p-footer { grid-column: 2 / 3;
-        grid-row: 0.5fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    #p-footer {
         margin-top: 30px;
         height: 5vh;
         border-radius: 8px;
@@ -137,21 +135,16 @@ footer { height: 25vh;
             background-color: rgba(0, 0, 0, 0.6);
         }
     }
-    #div-logofooter { grid-column: 1 / 2;
-        grid-row: 1 / 3;
-        height: 100%;
-        width: 100%;
+    #div-logofooter {
         text-align: center;
-        .logo-footer { height: 80px;
-            width: 80px;
+        .logofooter { height: 40px;
+            width: 40px;
             border-radius: 30px;
             margin-top: 10px;
         }
     }
-    #redes-index { margin: 5px;
-        grid-column: auto;
-        grid-row: auto;
-        .img-redes { margin-top: 20px;
+    #redes-index {
+        .imgredes { margin: 10px;
             height: 35px;
             width: 35px;
         }

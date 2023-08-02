@@ -1,31 +1,23 @@
-.header { height: 40vh;
+#header { height: 20vh;
     background-image: url(../assets/imagenes/encabezado\ header.jpeg);
     background-size: cover;
     background-position: 0,5vh;
-    display: grid;
-    grid-template-rows: repeat(3, 0.5fr);
-    grid-template-columns: 0.3fr repeat(1, 0.6fr) 1fr;
-    grid-template-areas: 
-    ". h1 botone"
-    "logo . botone"
-    ". . botone";
-    align-items: center;
-    #div-logo {height: auto; 
-        grid-area: logo;
-        text-align: center;
-        margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    #div-logo { margin-left: 50px;
+        margin-top: 10px;
         .logo-header {
-            height: 80px;
-            width: 80px;
-            border-radius: 20px;
-            margin-bottom: 40px;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
         }
         }
     }
-    #div-header-btn { grid-area: botone;
-        margin-right: 20px;
-        text-align: center;
-        #nav-index {margin-top: 30px; 
+    #div-header-btn {
+        #nav-index {margin-top: 20px;
+            margin-right: 10px; 
             font-size: 10px;
             .botones-header{
                 text-decoration: none;
@@ -44,28 +36,19 @@
             }
         }
     }
-    #div-h1-header { grid-area: h1;
-        text-align: center;
-        border-radius: 10px;
-        .h1-header { 
+    #div-h1-header {
         margin-top: 10px;
+        border-radius: 10px;
+        .h1-header { text-align: center;
         color: $color-textos;
-        font-size: 25px;
+        font-size: 22px;
         font-family: $fuente-titulos;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         border-radius: 10px;
         }
     }
 #index-main { height: auto;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 0.5fr);
-    grid-template-rows: 0.1fr repeat(4, 0.1fr);
-    grid-template-areas: 
-    "h2-index h2-index h2-index"
-    "div-img-index div-img-index div-img-index"
-    "sec-index sec-index sec-index"
-    "img-nosotros img-nosotros img-nosotros"
-    "div-video-index div-video-index div-video-index"
+    background-color: $color-body;
     ;
     .h2-index { font-size: 50px;
         margin-top: 20px 0 0 10px;
@@ -73,68 +56,73 @@
         text-align: center;
         color: #4F000B;
         font-family: $fuente-titulos;
-        transition: width 4s linear;
     }
-    #div-img-nosotros { grid-area: div-img-index;
-        text-align: center;
+    #div-imgnosotros {
+        display: flex;
+        width: auto;
+        height: 430px;
 
-        .img-nosotros { height: 30vh;
+        .img-nosotro {
             border-radius: 10px;
-            box-shadow: $box-s;
-            margin: 15px;
+            box-shadow: $box-s; 
+            width: 0px;
+            height: 400px;
+            flex-grow: 1;
+            object-fit: cover;
+        transition: .5s ease;
             &:hover {
-                height: 15rem;
-                width:15rem;
+                width: 100px;
             }
 
         }
-        .video-nosotros { height: 50vh;
-            width: 20vw;
-            border-radius: 10px;
-            box-shadow: $box-s;
-            background-color: rgba(0, 0, 0, 0.218);
-            grid-area: nosotros-video;
-
         }
+        
     }
-    .sec-index { grid-area: sec-index;
+    .sec-index {
         font-size: 15px;
         font-family: cursive;
         article {
             .p-index { font-family: $fuente-parrafos;
+                    color: black;
             }
         }
     }
-    #div-video-index { grid-area: div-video-index;
+    #div-video-index {
         text-align: center;
-        .video-index2 { height: 80%;
-            width: 80%;
+        #videos-index2 { height: 70%;
+            width: 70%;
             border-radius: 10px;
             margin: 20px 0px 20px;
             box-shadow: $box-s;
+            object-fit: cover;
         }
     }
-    #img-nosotros2 { grid-area: img-nosotros;
-        text-align:  center;
-        .img-nosotros2 {
-            height: 30vh;
+    .img-nosotros2 {
+        display: flex;
+        width: auto;
+        height: 300px;
+        #img-nosotro2 { 
             border-radius: 10px;
-            box-shadow: $box-s;
-            margin: 10px;
+            box-shadow: $box-s; 
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            transition: .5s ease;
+            &:hover {
+                width: 200px;
+            }
+    
         }
     } 
-}
-footer { height: 25vh;
+#footer { height: auto;
     background-image: url(../assets/imagenes/encabezado\ header.jpeg);
     background-size: cover;
     background-position: 0,2vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 100px;
-    justify-content: space-evenly;
-    #p-footer { grid-column: 2 / 3;
-        grid-row: 0.5fr;
-        margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    #p-footer { 
         height: 5vh;
         border-radius: 8px;
         .p-index-footer { font-size: 15px;
@@ -143,23 +131,20 @@ footer { height: 25vh;
             background-color: rgba(0, 0, 0, 0.6);
         }
     }
-    #div-logofooter { grid-column: 1 / 2;
-        grid-row: 1 / 3;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        .logo-footer { height: 80px;
-            width: 80px;
+    #div-logofooter { 
+       text-align: center;
+        #logofooter { height: 50px;
+            width: 50px;
             border-radius: 10px;
             margin-top: 10px;
         }
     }
-    #redes-index { margin: 10px;
-        grid-column: auto;
-        grid-row: auto;
-        .img-redes { margin: 10px;
-            height: 35px;
-            width: 35px;
+    #redes-index {
+        
+        #imgredes {
+            margin: 10px;
+            height: 30px;
+            width: 30px;
         }
     }
 }
