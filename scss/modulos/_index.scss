@@ -1,52 +1,3 @@
-#header { height: 20vh;
-    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
-    background-size: cover;
-    background-position: 0,5vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    #div-logo { margin-left: 50px;
-        margin-top: 10px;
-        .logo-header {
-            height: 50px;
-            width: 50px;
-            border-radius: 10px;
-        }
-        }
-    }
-    #div-header-btn {
-        #nav-index {margin-top: 20px;
-            margin-right: 10px; 
-            font-size: 10px;
-            .botones-header{
-                text-decoration: none;
-                padding: 5px;
-                border: 0.1cm solid $color-body;
-                background-color: $color-botones;
-                border-radius: 25px;
-                color: black;
-                font-family: 'Arial Narrow Bold', sans-serif;
-                font-size: 11px;
-                &:hover {
-                    font-size: 1rem;
-                    background-color: rgba(0, 0, 0, 0.218);
-                    color: beige;
-                }
-            }
-        }
-    }
-    #div-h1-header {
-        margin-top: 10px;
-        border-radius: 10px;
-        .h1-header { text-align: center;
-        color: $color-textos;
-        font-size: 22px;
-        font-family: $fuente-titulos;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 10px;
-        }
-    }
 #index-main { height: auto;
     background-color: $color-body;
     ;
@@ -57,40 +8,42 @@
         color: #4F000B;
         font-family: $fuente-titulos;
     }
-    #div-imgnosotros {
+    #div-img-nosotro {
         display: flex;
+        height:430px;
         width: auto;
-        height: 430px;
+    }
+        .img-nosotros {
+           width: 0;
+           height: auto;
+           flex-grow: 1;
+           object-fit: cover;
+           transition: 0.5s ease;
 
-        .img-nosotro {
-            border-radius: 10px;
-            box-shadow: $box-s; 
-            width: 0px;
-            height: 400px;
-            flex-grow: 1;
-            object-fit: cover;
-        transition: .5s ease;
-            &:hover {
-                width: 100px;
-            }
+           &:hover{
+            width: 200px;
 
-        }
+           }
+
         }
         
     }
-    .sec-index {
+    .secindex {
         font-size: 15px;
         font-family: cursive;
         article {
-            .p-index { font-family: $fuente-parrafos;
+            .p-index {margin: 5px; 
+                font-family: $fuente-parrafos;
                     color: black;
+                    font-size: 20px;
             }
         }
     }
     #div-video-index {
         text-align: center;
-        #videos-index2 { height: 70%;
-            width: 70%;
+        width: 100%;
+        #videosindex2 { 
+            width: 90%;
             border-radius: 10px;
             margin: 20px 0px 20px;
             box-shadow: $box-s;
@@ -114,37 +67,3 @@
     
         }
     } 
-#footer { height: auto;
-    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
-    background-size: cover;
-    background-position: 0,2vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    #p-footer { 
-        height: 5vh;
-        border-radius: 8px;
-        .p-index-footer { font-size: 15px;
-            font-family: $fuente-parrafos;
-            color: $color-textos;
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-    }
-    #div-logofooter { 
-       text-align: center;
-        #logofooter { height: 50px;
-            width: 50px;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-    }
-    #redes-index {
-        
-        #imgredes {
-            margin: 10px;
-            height: 30px;
-            width: 30px;
-        }
-    }
-}

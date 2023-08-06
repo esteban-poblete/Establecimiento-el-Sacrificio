@@ -1,6 +1,6 @@
 /* @media queris */
 @media (max-width:1024px){
-    #header {height: 30vh;
+    #header {height: 26vh;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -16,10 +16,9 @@
     #div-h1-header {
             order: 2;
     }
-       .img-nosotros {
-           margin: 5px;
-       }
+
     }
+   
    @media (min-width: 375px) and (max-width: 653px) {
        /* index */
        #header {
@@ -44,63 +43,36 @@
         margin-right: 15px;
         order: 2;
     }
-          
-       
-       #img-nosotros2 {
-        display: flex;
-           height: auto;
-           width: auto;
-       }
-       .img-nosotros {
-           width: auto;
-           height: 40vh;
-   
-       }
-       
-       #videos-index2 {
-           width: 100%;
-           height: 100%;
-   
-       }
-       
-       footer {height: auto;
+    
+    #foter {height: auto;
            display: flex;
-           flex-direction: column;
+           flex-direction:column;
            align-items: center;
        }
        #div-logofooter {
-        height: 50%;
-        width: 50%;
         order: 2;
        }
-       .logo-footer {
-        width: 50px;
-        height: 50px;
-        }
         #p-footer {
             order: 3;
         }
         #redes-index {
             order: 1;
         }
-
-       
-       
-       
-       /* proyectos */
+        /* proyectos */
+        
        /* contacto */
        #div-h1-header {
            text-align: center;
            grid-row: 2 / 3;
            grid-column: 1 / 3;
        }
-       /* trabajos */
-       #img-otros-trabajos {
-           display: flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           justify-content: space-evenly;
+       .aside-form {
+        flex-direction: row;
        }
+   
+       /* trabajos */
+       
+       
        /* herramientas */
        .div-img-herramientas {
            margin-right: 50px;

@@ -1,0 +1,48 @@
+#header { height: 23vh;
+    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
+    background-size: cover;
+    background-position: 0,5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    #div-logo { margin-left: 50px;
+        margin-top: 10px;
+        .logo-header {
+            height: 35px;
+            width: 35px;
+            border-radius: 10px;
+        }
+        }
+    }
+    #div-header-btn {
+        #nav-index {margin-top: 20px;
+            margin-right: 10px; 
+            font-size: 14px;
+            .botones-header{
+                text-decoration: none;
+                padding: 5px;
+                border: 0.1cm solid $color-body;
+                background-color: $color-botones;
+                border-radius: 25px;
+                color: black;
+                font-family: 'Arial Narrow Bold', sans-serif;
+                font-size: 11px;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.218);
+                    color: beige;
+                }
+            }
+        }
+    }
+    #div-h1-header {
+        margin-top: 10px;
+        border-radius: 10px;
+        .h1-header { text-align: center;
+        color: $color-textos;
+        font-size: 20px;
+        font-family: $fuente-titulos;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        }
+    }

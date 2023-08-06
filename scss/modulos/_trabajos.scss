@@ -1,152 +1,133 @@
-.header { height: 30vh;
-    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
-    background-size: cover;
-    background-position: 0,5vh;
-    display: grid;
-    grid-template-rows: repeat(3, 0.5fr);
-    grid-template-columns: 0.3fr repeat(1, 0.6fr) 0.5fr;
-    grid-template-areas: 
-    ". . botones"
-    ". h1 ."
-    "logo . .";
-    align-items: center;
-    #div-logo { grid-area: logo;
-        text-align: center;
-        .logoheader {
-            height: 80px;
-            width: 80px;
-            border-radius: 20px;
-            margin-bottom: 10px;
-        }
-    }
-    #div-header-btn { grid-area: botones;
-        text-align: right;
-        grid-template-columns: auto auto;
-        margin-right: 20px;
-        text-align: center;
-        #nav-index { font-size: 10px;
-            .botones-header {text-decoration: none;
-                padding: 5px;
-                border: 0.1cm solid $color-botones;
-                background-color: $color-botones;
-                border-radius: 25px;
-                color: black;
-                font-family: 'Arial Narrow Bold', sans-serif;
-                font-size: 11px;
-                &:hover {
-                    font-size: 1rem;
-                    background-color: rgba(0, 0, 0, 0.218);
-                    color: beige;
-                }
-            }
-        }
-    }
-    #div-h1-header { grid-area: h1;
-        text-align: center;
-        border-radius: 10px;
-        .h1-header { color: $color-textos;
-        font-size: 25px;
-        font-family: $fuente-titulos;
-        background-color: rgba(0, 0, 0, 0.6);
-        border-radius: 10px;
-        }
-    }
-}
 #trabajos-main { display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
+    text-align: center;
+    overflow-x: hidden;
     .h2-trabajos { text-align: center;
         font-size: 38px;
         font-family: $fuente-parrafos;
         color: #4F000B;
     }
-    #img-heladas { text-align: center;
-        width: 100%;
-        height: 100%;
-        .img-heladas { box-shadow: 5px 5px 5px 5px rgb(243, 4, 4 , 00.700);
-            height: 20%;
-            width: 20%;
-            border-radius: 10px;
-            margin: 10px;
+    .p-trabajos {
+        font-size: 16px;
+        color: black;
+        font-family: $fuente-parrafos;
+        text-align: center;
+    }
+    #img-heladas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,
+        minmax(150px ,1fr));
+        gap: 16px;
+        align-items: stretch;
+       
+        .img-helada {
+            height: auto;
+            width: 100%;
+            box-shadow: $box-s;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: 0.5s ease;
+            & :hover {
+                height:  100px;
+
+            }
         }
     }
-    #div-raleo { text-align: center;
-        width: 100%;
-        height: 100%;
+    #div-raleo { display: grid;
+            grid-template-columns: repeat(auto-fit,
+            minmax(150px,  1fr));
+            gap: 16px;
+            align-items: center;
         .img-raleo {
             box-shadow: $box-s;
-            height: 20%;
-            width: 20%;
-            border-radius: 10px;
-            margin: 10px;
+            height:auto;
+            width:100%;
+            border-radius: 8px;
+            object-fit: cover;
         }
     }
-    #img-poda { text-align: center;
-        width: 100%;
-        height: 100%;
+    #img-poda { display: grid;
+        grid-template-columns: repeat(auto-fit,
+        minmax(150px ,1fr));
+        gap: 16px;
+        align-items: stretch;
         .img-poda {box-shadow: $box-s;
-            width: 20%;
-            height: 20%;
-            border-radius: 10px;
-            margin: 10px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
 
         }
     }
-    #img-cosecha {text-align: center;
-        width: 100%;
-        height: 100%;
+    #img-cosecha {display: grid;
+        grid-template-columns: repeat(auto-fit,
+        minmax(150px, 1fr));
+        gap: 16px;
+        align-items: stretch;
         .img-cosecha {
             box-shadow: $box-s;
-            width: 20%;
-            height: 20%;
-            border-radius: 10px;
-            margin: 10px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
 
         }
+
     }
-    #img-otros-trabajos { text-align: center;
-        width: 100%;
-        height: 100%;
+    .otros-trabajo{
+        text-align: center;
+        font-family: $fuente-parrafos;
+        color: #4F000B;
+    }
+    #img-otros-trabajos { display: grid;
+        grid-template-columns: repeat(auto-fit,
+        minmax(150px, 1fr));
+        gap: 16px;
+        align-items: stretch;
         .img-otros-trabajos {  
             box-shadow: $box-s;
-            height: 20%;
-            width: 20%;
-            border-radius: 10px;
-            margin: 10px;
+            height: auto;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
         }
+        
     }
 }
-#footer { height: 25vh;
+#footer { height: auto;
     background-image: url(../assets/imagenes/encabezado\ header.jpeg);
     background-size: cover;
     background-position: 0,2vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     #p-footer {
-        margin-top: 30px;
         height: 5vh;
         border-radius: 8px;
-        .p-index-footer { font-size: 15px;
+        .p-index-footer { font-size: 13px;
             font-family: $fuente-parrafos;
             color: $color-textos;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.9);
         }
     }
-    #div-logofooter {
+    #div-logofooter {height: auto;
         text-align: center;
-        .logofooter { height: 40px;
-            width: 40px;
-            border-radius: 30px;
+        .logofooter { height: 35px;
+            width: 35px;
+            border-radius: 8px;
             margin-top: 10px;
         }
     }
-    #redes-index {
+    #redes-index {height: auto;
         .imgredes { margin: 10px;
-            height: 35px;
-            width: 35px;
+            height: 30px;
+            width: 30px;
         }
     }
 }

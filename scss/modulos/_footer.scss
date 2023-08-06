@@ -1,0 +1,35 @@
+#footer { height: auto;
+    background-image: url(../assets/imagenes/encabezado\ header.jpeg);
+    background-size: cover;
+    background-position: 0,2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    #p-footer { 
+        height: 5vh;
+        border-radius: 8px;
+        .p-index-footer { font-size: 13px;
+            font-family: $fuente-parrafos;
+            color: $color-textos;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
+    #div-logofooter { height: auto;
+       text-align: center;
+        #logofooter { height: 35px;
+            width: 35px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    }
+    #redes-index {
+        height: auto;
+        
+        #imgredes {
+            margin: 10px;
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
