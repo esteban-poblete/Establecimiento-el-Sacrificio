@@ -93,7 +93,7 @@
   font-size: 16px;
 }
 #index-main #div-video-index {
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
   width: 100%;
   height: auto;
@@ -186,7 +186,7 @@ main .div-img-herramientas {
   gap: 16px;
   justify-items: center;
   align-items: stretch;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 main .div-img-herramientas .img-herramienta {
   width: 100%;
@@ -205,7 +205,7 @@ main #div-img-herramientas2 {
   gap: 16px;
   justify-items: center;
   align-items: stretch;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 main #div-img-herramientas2 .img-herramienta2 {
   width: 100%;
@@ -267,7 +267,7 @@ main #sec-herramientas .p2 {
   object-fit: cover;
 }
 .main-proyectos .div-img-proyectos2 {
-  margin-top: 10px;
+  margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 16px;
@@ -311,7 +311,7 @@ main #sec-herramientas .p2 {
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5), -5px -5px 25px black;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 #trabajos-main #div-raleo {
   display: grid;
@@ -326,7 +326,7 @@ main #sec-herramientas .p2 {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 #trabajos-main #img-poda {
   display: grid;
@@ -341,7 +341,7 @@ main #sec-herramientas .p2 {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 #trabajos-main #img-cosecha {
   display: grid;
@@ -356,7 +356,7 @@ main #sec-herramientas .p2 {
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5), -5px -5px 25px black;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 #trabajos-main .otros-trabajo {
   text-align: center;
@@ -376,7 +376,7 @@ main #sec-herramientas .p2 {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #footer {

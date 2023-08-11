@@ -7,7 +7,6 @@ main {background-color: $color-body;
     }
     .div-img-herramientas {@include grid;
         margin-top: $margin-top;
-        
         .img-herramienta { @include img;
             box-shadow: $box-s;
         }
