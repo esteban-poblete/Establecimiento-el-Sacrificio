@@ -1,0 +1,47 @@
+#index-main { height: auto;
+    background-color: $color-body;
+    ;
+    .h2-index { font-size: 50px;
+        grid-area: h2-index;
+        text-align: center;
+        color: #4F000B;
+        font-family: $fuente-titulos;
+    }
+    #div-img-nosotro {
+        @include div-img;
+    }
+        .img-nosotros {
+            @include img-index;
+           }
+
+    .secindex {
+        article {
+            .p-index {margin: 5px; 
+                text-align: center;
+                font-family: $fuente-parrafos;
+                    color: black;
+                    font-size: 16px;
+            }
+        }
+    }
+    #div-video-index {
+        margin-top: $margin-top;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        #videosindex2 {
+            width: 340px;
+            height: 340px;
+            border-radius: 10px;
+            box-shadow: $box-s;
+            object-fit: cover;
+        }
+    }
+    .img-nosotros2 {
+        @include div-img;
+        #img-nosotro2 { 
+            @include img-index;
+            }
+    
+        }
+    } 

@@ -1,91 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/imagenes/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../css/style.css">
-   <title>Proyectos</title>
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/imagenes/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Proyectos</title>
+</head>
 <body>
-  <header class="container-fluid" style="background-image: url(../assets/imagenes/encabezado\ header.jpeg);">
-    <h1 class="h1-proyecto">Proyectos</h1>
-    <nav class="navbar navbar-expand-lg">
-      <div>
-        <a class="navbar-brand" href="#">
-          <img src="../assets/imagenes/img-logo-header.png" alt="logo" width="60px">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link dropdown-toggle" href="./herramientas.html">herramientas</a>
-            <li class="nav-item">
-              <a class="nav-link" href="./proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./trabajos.html">Trabajos</a>
-            </li>
-          </ul>
-        
-        </div>
-      </div>
-    </nav>
-  
+  <header id="header">
+    <div id="div-logo">
+        <img class="logo-header" src="../assets/imagenes/img-logo-header.png" alt="logo">
+    </div>
     
-  </header>
-<!--    
-    <main class="main-proyectos">
+    <div id="div-header-btn">
+        <nav id="nav-index">
+            <a class="botones-header" href="../index.html">Inicio</a>
+            <a class="botones-header" href="./contacto.html">Contacto</a>
+            <a class="botones-header" href="./herramientas.html">Herramientas</a>
+            <a class="botones-header" href="./proyectos.html">Proyectos</a>
+            <a class="botones-header" href="./trabajos.html">Trabajos</a>
+        </nav>
+    </div>
+    <div id="div-h1-header">
+        <h1 class="h1-header">Proyectos Futuros</h1>
+    </div>
+</header>
+  <main class="main-proyectos">
             <div class="div-video-proyectos">
                 <video class="video-proyectos" controls src="../assets/videos/video-proyectos.mp4">video-proyectos</video>
+            </div>
+            <div class="div-img-proyectos">
+              <img class="img-proyectos" src="../assets/imagenes/proyectos1.jpeg" alt="proyectos">
+              <img class="img-proyectos" src="../assets/imagenes/proyectos2.jpeg" alt="proyectos">
+              <img class="img-proyectos" src="../assets/imagenes/proyectos3.jpeg" alt="proyectos">
             </div>
         <section class="sec-proyectos">
             <p> Si de proyectos hablamos, tenemos en mente muchas cosas, pero fuera de lo que es la fruticultura (como viene siendo desde siempre esta chacra) uno de los más cercanos y que ya estamos llevando a cabo, es hacer un engorde para tener animales vacunos. Para ello, realizamos un corral con todo lo que eso implica, es decir, un cepo, manga, tranqueras, comederos, bebederos y demás, con todo lo necesario para poder trabajar dichos animales, pero tenemos en mente ir agregando y sumando pequeñas cosas para poder trabajar comodamente y así terminar de cerrar este proyecto.
               También, un objetivo a corto plazo que nos propusimos es realizar pastura para así poder alimentar a nuestros propios animales sin necesidad de depender necesariamente de forrajerías. 
             </p>
-            
         </section>
-            <div class="div-img-proyectos">
-                <img class="img-proyectos" src="../assets/imagenes/proyectos1.jpeg" alt="proyectos">
-                <img class="img-proyectos" src="../assets/imagenes/proyectos2.jpeg" alt="proyectos">
-                <img class="img-proyectos" src="../assets/imagenes/proyectos3.jpeg" alt="proyectos">
-            </div>
             <div class="div-img-proyectos2">
-                <img class="img-proyectos" src="../assets/imagenes/proyectos5.jpeg" alt="proyectos">
-                <img class="img-proyectos" src="../assets/imagenes/protectos6.jpeg" alt="proyectos">
-                <img class="img-proyectos" src="../assets/imagenes/proyectos8.jpeg" alt="proyectos">
+                <img class="img-proyecto" src="../assets/imagenes/proyectos5.jpeg" alt="proyectos">
+                <img class="img-proyecto" src="../assets/imagenes/protectos6.jpeg" alt="proyectos">
+                <img class="img-proyecto" src="../assets/imagenes/proyectos8.jpeg" alt="proyectos">
             </div>
-       
-    </main>
-    <footer>
+      </main>
+    <footer id="footer">
         <div id="p-footer">
              <p class="p-index-footer">Todos los Derechos Reservados</p>
         </div>
        
         <div id="div-logofooter">
-            <img class="logofooter" src="../assets/imagenes/img-logo-header.png" alt="logo">
+            <img id="logofooter" src="../assets/imagenes/img-logo-header.png" alt="logo">
         </div>
         <div id="redes-index">
-            <img class="imgredes" src="../assets/imagenes/facebook.svg" alt="facebook">
-            <img class="imgredes" src="../assets/imagenes/instagram.svg" alt="instagram">
-            <img class="imgredes" src="../assets/imagenes/twitter.svg" alt="twitter">
-            <img class="imgredes" src="../assets/imagenes/whatsapp.svg" alt="whatsapp">
+          <a href="https://es-la.facebook.com/" target="_blank">
+            <img id="imgredes" src="../assets/imagenes/facebook.svg" alt="facebook">
+          </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img id="imgredes" src="../assets/imagenes/instagram.svg" alt="instagram">
+            </a>
+            <a href="https://twitter.com/?lang=es" target="_blank">
+              <img id="imgredes" src="../assets/imagenes/twitter-x.png" alt="twitter">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+              <img id="imgredes" src="../assets/imagenes/whatsapp.svg" alt="whatsapp">
+            </a>            
         </div>
-    </footer>  -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
- 
-
+    </footer>
 </body>
 </html>

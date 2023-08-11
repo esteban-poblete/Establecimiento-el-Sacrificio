@@ -25,6 +25,7 @@
            display: flex;
            flex-direction: column;
            flex-wrap: wrap;
+           justify-content: flex-start;
        }
        #div-logo {text-align: start;
 
@@ -36,43 +37,32 @@
     #div-header-btn {
          order: 3;
         text-align: center;
-        margin-right: 10px;
        
     }
     #div-h1-header {
         margin-right: 15px;
         order: 2;
     }
-    
-    #foter {height: auto;
-           display: flex;
-           flex-direction:column;
-           align-items: center;
-       }
-       #div-logofooter {
-        order: 2;
-       }
-        #p-footer {
-            order: 3;
-        }
-        #redes-index {
-            order: 1;
-        }
-        /* proyectos */
-        
+    #div-img-nosotro {
+        height: 250px;
+    }
+    #footer {
+        grid-template-areas: 
+        "redes"
+        "logo"
+        "texto";
+        justify-items: center;
+    }
+        /* proyectos */    
        /* contacto */
-       #div-h1-header {
-           text-align: center;
-           grid-row: 2 / 3;
-           grid-column: 1 / 3;
-       }
-       .aside-form {
-        flex-direction: row;
-       }
-   
+    .main-contacto {
+        grid-template-areas:
+        "form"
+        "form"
+        "aside"
+        "aside";
+    }   
        /* trabajos */
-       
-       
        /* herramientas */
        .div-img-herramientas {
            margin-right: 50px;

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 
 
 $fuente-parrafos:'Montserrat', sans-serif; 
@@ -7,8 +7,8 @@ $color-textos: #FF9B54;
 $color-botones: #e2efdeff;
 $color-body:rgb(164,249,205);
 $fuente-titulos:'Rajdhani', sans-serif;
-$box-s: 5px 5px 5px 5px rgba(0, 0, 0, 0.218);
-$primary: #0074d9;
-$danger: black;
+$box-s: 5px 5px 25px rgba(0, 0, 0, 0.500),
+-5px -5px 25px black ;
+$margin-top: 10px;
 
 @import url("../node_modules/bootstrap/scss/bootstrap"); 

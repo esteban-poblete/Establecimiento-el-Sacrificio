@@ -1,40 +1,43 @@
-.main-contacto {display: grid;
+.main-contacto {height: auto;
+    display: grid;
     grid-template-areas:
     "aside form"
-    "aside form";
+    "aside form"
+    ". ."
+    ". .";
     justify-content: space-around;
-    align-items: baseline;
-    height: 75vh;
+    align-items: center;
+    justify-items: center;
     background-color: $color-body;
-    .aside-form {height: 400px;
+    .aside-form {
        grid-area: aside;
-       display: flex;
-       flex-direction: column;
-       justify-content:space-around;
+       padding: 20px;
        .logos-contacto {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
        }
+       a {
+        text-decoration: none;
+        color: black;
+    }
        
         
     }
-    #formulario { 
+    #formulario { height: auto;
         grid-area: form;
-        align-items: center;
+        @include flexbox (column,wrap,center,flex-start);
         .caja-nombre { font-size: 15px;
             font-family: $fuente-parrafos;
-            margin: 5px;
         }
         .caja-mail { font-size: 15px;
             font-family: $fuente-parrafos;
-            margin: 5px;
         }
-        .caja-mensaje { margin: 5px;
+        .caja-mensaje { 
             font-size: 15px;
             font-family: $fuente-parrafos;
         }
-        .div-btn-envia { margin-top: 25px;
-            height: 5vh;
+        .div-btn-envia {
+            text-align: center;
             .btn-envia1 { background-color: rgba(0, 0, 0, 0.048);
                 color:black;
             }

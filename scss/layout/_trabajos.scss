@@ -1,0 +1,57 @@
+#trabajos-main {
+    text-align: center;
+    overflow-x: hidden;
+    .h2-trabajos { text-align: center;
+        font-size: 38px;
+        font-family: $fuente-parrafos;
+        color: #4F000B;
+    }
+    .p-trabajos {
+        font-size: 16px;
+        color: black;
+        font-family: $fuente-parrafos;
+        text-align: center;
+    }
+    #img-heladas {@include grid;
+       
+        .img-helada {
+           @include img;
+            box-shadow: $box-s;
+            margin-top: $margin-top;
+        }
+    }
+    #div-raleo { @include grid;
+        .img-raleo {
+            box-shadow:$box-s ;
+          @include img;
+          margin-top: $margin-top;
+        }
+    }
+    #img-poda { @include grid;
+        .img-poda {box-shadow: $box-s;
+            @include img;
+            margin-top: $margin-top;
+
+        }
+    }
+    #img-cosecha {@include grid;
+        .img-cosecha {
+           @include img; 
+            box-shadow: $box-s;
+            margin-top: $margin-top;
+        }
+    }
+    .otros-trabajo{
+        text-align: center;
+        font-family: $fuente-parrafos;
+        color: #4F000B;
+    }
+    #img-otros-trabajos { @include grid;
+        .img-otros-trabajos {  
+            box-shadow: $box-s;
+            @include img;
+            margin-top: $margin-top;
+        }
+        
+    }
+}

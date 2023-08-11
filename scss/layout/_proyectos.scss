@@ -1,0 +1,45 @@
+.main-proyectos { background-color: $color-body;
+    .div-video-proyectos {
+        width: 100%;
+        height: auto;
+        text-align: center; 
+        .video-proyectos {
+            text-align: center;
+            width: 340px;
+            height: 340px;
+            border-radius: 8px;
+            box-shadow: $box-s;
+            object-fit: cover;
+        }
+    }
+    .sec-proyectos {
+        text-align: center;
+        p {
+            font-family: $fuente-parrafos
+        }
+    }
+
+    .div-img-proyectos {
+        margin-bottom: 10px;
+        @include grid;
+        .img-proyectos {
+            height: auto;
+            width: 100%;
+            box-shadow: $box-s;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+    .div-img-proyectos2 {
+        margin-top: $margin-top;
+        @include grid;
+        .img-proyecto {
+            height: auto;
+            width: 100%;
+            box-shadow: $box-s;
+            border-radius: 8px;
+            object-fit: cover;
+
+        }
+    }
+}

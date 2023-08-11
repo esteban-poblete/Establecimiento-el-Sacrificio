@@ -1,15 +1,17 @@
-#footer { height: auto;
+#footer { height: 23vh;
     background-image: url(../assets/imagenes/encabezado\ header.jpeg);
     background-size: cover;
     background-position: 0,2vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    #p-footer { 
+   display: grid;
+   grid-template-areas: 
+   "redes . ."
+   ". . logo"
+   ". texto .";
+    #p-footer { grid-area: texto;
         height: 5vh;
         border-radius: 8px;
-        .p-index-footer { font-size: 13px;
+        .p-index-footer { 
+            font-size: 13px;
             font-family: $fuente-parrafos;
             color: $color-textos;
             background-color: rgba(0, 0, 0, 0.9);
@@ -17,14 +19,17 @@
     }
     #div-logofooter { height: auto;
        text-align: center;
-        #logofooter { height: 35px;
+       grid-area: logo;
+        #logofooter { 
+            height: 35px;
             width: 35px;
             border-radius: 8px;
             margin-top: 10px;
         }
     }
     #redes-index {
-        height: auto;
+        grid-area: redes;
+        height: 50px;
         
         #imgredes {
             margin: 10px;
